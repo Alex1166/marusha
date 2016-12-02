@@ -18,126 +18,184 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-md-1 push-md-1 bd-sidebar">
-            <nav class="menu" id="docsNavbarContent">
-                <div class="row">
-                    <div class="bd-toc-item">
-                        <ul class="nav">
-                            <li class="single-link ">
-                                <a href="/marusha/abc_hiragana.html" title="Хирагана">
-                                    <h6>
-                                        A
-                                    </h6>
-                                </a>
-                            </li>
-                            <li class="single-link">
-                                <a href="/marusha/abc_katakana.html" title="Катакана">
-                                    <h6>
-                                        B
-                                    </h6>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="bd-toc-item">
-                        <ul class="nav">
-                            <li class="single-link active">
-                                <a href="/marusha/test_trans_hiragana.html" title="Транскрипция знака">
-                                    <h6>
-                                        C
-                                    </h6>
-                                </a>
-                            </li>
-                            <li class="single-link">
-                                <a href="/marusha/test_znak_hiragana.html" title="Знак по транскрипции">
-                                    <h6>
-                                        D
-                                    </h6>
-                                </a>
-                            </li>
-                            <li class="single-link">
-                                <a href="/marusha/test_analogue_hiragana.html" title="Аналогии азбук">
-                                    <h6>
-                                        E
-                                    </h6>
-                                </a>
-                            </li>
-                            <li class="single-link">
-                                <a href="/marusha/test_write_hiragana.html" title="Написание">
-                                    <h6>
-                                        F
-                                    </h6>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="bd-toc-item">
-                        <ul class="nav">
-                            <li class="single-link">
-                                <a href="/marusha/profile.html" title="Профиль">
-                                    <h6>
-                                        H
-                                    </h6>
-                                </a>
-                            </li>
-                            <li class="single-link">
-                                <a href="/marusha/settings.html" title="Настройки">
-                                    <h6>
-                                        G
-                                    </h6>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+    <div class="col-xs-12 col-md-1 col-lg-1 push-lg-1 bd-sidebar ">
+        <div class="row">
+            <div class="main-menu">
+                <ul class="nav">
+                    <li class="single-link active training">
+                        <a href="/marusha/test_trans_hiragana.html" title="Транскрипция знака">
+                            <h6>
+                                C
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link training">
+                        <a href="/marusha/test_znak_hiragana.html" title="Знак по транскрипции">
+                            <h6>
+                                D
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link training">
+                        <a href="/marusha/test_analogue_hiragana.html" title="Аналогии азбук">
+                            <h6>
+                                E
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link training">
+                        <a href="/marusha/test_write_hiragana.html" title="Написание">
+                            <h6>
+                                F
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link abc">
+                        <a href="/marusha/abc_hiragana.html" title="Хирагана">
+                            <h6>
+                                A
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link abc">
+                        <a href="/marusha/abc_katakana.html" title="Катакана">
+                            <h6>
+                                B
+                            </h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-xs-12 col-md-9 push-md-2 bd-content">
-            <div class="row">
+        <div class="row">
+            <div class="settings-menu">
+                <ul class="nav">
+                    <li class="single-link">
+                        <a href="/marusha/settings.html" title="Настройки">
+                            <h6>
+                                G
+                            </h6>
+                        </a>
+                    </li>
+                    <li class="single-link">
+                        <a href="/marusha/index.html" title="О приложении">
+                            <h6>
+                                I
+                            </h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-10 col-lg-9 push-lg-1 bd-content">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-5 col-xl-4">
                 <div class="btn-group btn-block" data-toggle="buttons">
                     <label class="btn btn-primary active ">
-                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                        <input role="button" type="radio" name="options" id="option1" autocomplete="off" checked>
                         Хирагана
                     </label>
                     <label class="btn btn-primary ">
-                        <input type="radio" name="options" id="option2" autocomplete="off">
+                        <input role="button" type="radio" name="options" id="option2" autocomplete="off">
                         Катакана
                     </label>
                 </div>
             </div>
-            <div id="my-div" class="row">
+            <div class="col-xs-12 col-md-4 col-lg-3 push-md-2 push-lg-4 push-xl-5">
+                <button type="button" class="btn btn-block btn-primary">
+                    Прогресс
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6 col-xl-8">
+                <div class="row">
+                    <div class="suggested-symbol">
+                        <h2>
+                            あ
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-transcription">
+                        <div>
+                            <input type="text" class="form-control" id="inputTransHira" placeholder="Введите транскрипцию символа">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skip-transcription">
+                        <button type="button" class="btn btn-primary">
+                            Пропустить
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 col-xl-4 push-md-3 push-lg-3 push-xl-2">
+                <div id="history-trans-hira" class="row">
+                    <table class="table table-borderless fit">
+                        <tbody>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>あ</td>
+                            <td>a</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="my-div" class="row">
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                     aria-hidden="true">
-                    <script language="javascript" type="text/javascript">
-                        $('#my-div a').click(function () {
-                            var txt = $(this).text();
-                            var div = $('#outputed')[0];
-                            div.innerHTML = txt;
-                            var myModalLabel = $('#myModalLabel')[0];
-                            myModalLabel.innerHTML = txt;
-                        });
-                    </script>
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                            </div>
-                            <div id="outputed" class="modal-body">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <script language="javascript" type="text/javascript">
+                    $('#my-div a').click(function () {
+                        var txt = $(this).text();
+                        var div = $('#outputed')[0];
+                        div.innerHTML = txt;
+                        var myModalLabel = $('#myModalLabel')[0];
+                        myModalLabel.innerHTML = txt;
+                    });
+                </script>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div id="outputed" class="modal-body">
 
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
