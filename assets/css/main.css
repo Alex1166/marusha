@@ -29,11 +29,6 @@ h2 {
     margin: 5rem 1rem 1rem 1rem;
 }
 
-/*.menu {*/
-    /*background-color: #FFFB5F;*/
-    /*border-radius: .5rem;*/
-/*}*/
-
 .single-link.training {
     background-color: #FFFB5F;
     border: 1px solid #FFE90F;
@@ -142,26 +137,27 @@ h2 {
     border-color: #FFFB5F;
 }
 
-.menu {
+#main {
+    transition: margin-left .5s;
     background-color: transparent;
     padding: 0;
 }
 
-.menu .nav > li > a {
+#main .nav > li > a {
     display: block;
     height: 100%;
     padding-top: 0.5rem;
 }
 
-.menu .nav > li > a:hover,
-.menu .nav > li > a:focus {
+#main .nav > li > a:hover,
+#main .nav > li > a:focus {
     text-decoration: none;
     /*background-color: #FFDF3C;*/
 }
 
-.menu .nav > .active > a,
-.menu .nav > .active:hover > a,
-.menu .nav > .active:focus > a {
+#main .nav > .active > a,
+#main .nav > .active:hover > a,
+#main .nav > .active:focus > a {
     /*background-color: #FFDF3C;*/
 }
 
@@ -283,32 +279,37 @@ h2 {
     background-color: transparent;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
 .sidenav a{
-    /*padding: 8px 8px 8px 32px;*/
     text-decoration: none;
-    /*font-size: 25px;*/
-    /*color: #818181;*/
     display: block;
     transition: 0.3s
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+#button-open-div {
+    display: flex;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#button-open-div > #button-open {
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    -ms-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -webkit-transform-origin: left top 0;
+    transform-origin: left top 0;
+    padding: 10px;
+    text-transform: uppercase;
 }
