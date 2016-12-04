@@ -17,8 +17,8 @@ body {
 h6 {
     font-family: Marusha;
     font-size: 36pt;
-    color: #575625;
     text-align: center;
+    color: #575625;
 }
 
 h2 {
@@ -29,29 +29,72 @@ h2 {
     margin: 5rem 1rem 1rem 1rem;
 }
 
-.menu {
+/*.menu {*/
+    /*background-color: #FFFB5F;*/
+    /*border-radius: .5rem;*/
+/*}*/
+
+.single-link.training {
     background-color: #FFFB5F;
-    border-radius: .5rem;
+    border: 1px solid #FFE90F;
+    margin-bottom: 0;
 }
 
-.single-link {
-    background-color: #FFFB5F;
-    border: 4px ridge #FFE90F;
-}
-
-.single-link.active {
+.single-link.training.active {
     background-color: #FFDF3C;
-    border: 4px ridge #FFCC5C;
+    border: 1px solid #FFCC5C;
 }
 
-.single-link.active:hover {
+.single-link.training.active:hover {
     background-color: #e5c62b;
     border-color: #e1AF2e;
 }
 
-.single-link:hover {
+.single-link.training:hover {
     background-color: #FFDF3C;
-    border: 4px ridge #FFCC5C;
+    border: 1px solid #FFCC5C;
+}
+
+.single-link.abc {
+    background-color: #AFFB5F;
+    border: 1px solid #AFE90F;
+    margin-bottom: 0;
+}
+
+.single-link.abc.active {
+    background-color: #AFDF3C;
+    border: 1px solid #AFCC5C;
+}
+
+.single-link.abc.active:hover {
+    background-color: #a5c62b;
+    border-color: #a1AF2e;
+}
+
+.single-link.abc:hover {
+    background-color: #AFDF3C;
+    border: 1px solid #AFCC5C;
+}
+
+.single-link.other {
+    background-color: #0FFB5F;
+    border: 1px solid #0FE90F;
+    margin-bottom: 0;
+}
+
+.single-link.other.active {
+    background-color: #0FDF3C;
+    border: 1px solid #0FCC5C;
+}
+
+.single-link.other.active:hover {
+    background-color: #05c62b;
+    border-color: #01AF2e;
+}
+
+.single-link.other:hover {
+    background-color: #0FDF3C;
+    border: 1px solid #0FCC5C;
 }
 
 .btn-primary {
@@ -99,93 +142,34 @@ h2 {
     border-color: #FFFB5F;
 }
 
-.settings-menu {
-    margin-top: 4rem;
-}
-
-.bd-sidebar {
+.menu {
     background-color: transparent;
-    border-radius: .5rem;
+    padding: 0;
 }
 
-.bd-sidebar .nav > li > a {
+.menu .nav > li > a {
     display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.25rem;
+    height: 100%;
+    padding-top: 0.5rem;
 }
 
-.bd-sidebar .nav > li > a:hover,
-.bd-sidebar .nav > li > a:focus {
+.menu .nav > li > a:hover,
+.menu .nav > li > a:focus {
     text-decoration: none;
     /*background-color: #FFDF3C;*/
 }
 
-.bd-sidebar .nav > .active > a,
-.bd-sidebar .nav > .active:hover > a,
-.bd-sidebar .nav > .active:focus > a {
+.menu .nav > .active > a,
+.menu .nav > .active:hover > a,
+.menu .nav > .active:focus > a {
     /*background-color: #FFDF3C;*/
 }
 
-.bd-booticon {
-    display: block;
-    width: 9rem;
-    height: 9rem;
-    font-size: 6.5rem;
-    line-height: 9rem;
-    color: #fff;
-    text-align: center;
-    cursor: default;
-    background-color: #563d7c;
-    border-radius: 15%;
+.workspace {
+    border: 1px solid #FFE90F;
 }
 
-.bd-booticon.inverse {
-    color: #563d7c;
-    background-color: #fff;
-}
-
-.bd-booticon.outline {
-    background-color: transparent;
-    border: 1px solid #cdbfe3;
-}
-
-.bd-navbar {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.bd-navbar .navbar-nav .nav-link {
-    color: #8e869d;
-}
-
-.bd-navbar .navbar-nav .nav-link.active, .bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
-    color: #373a3c;
-    background-color: transparent;
-}
-
-.bd-navbar .navbar-nav .nav-link.active {
-    font-weight: 500;
-    color: #121314;
-}
-
-.bd-navbar .dropdown-menu {
-    font-size: inherit;
-}
-
-@media (max-width: 767px) {
-    .bd-navbar .nav-link {
-        float: none;
-    }
-    .bd-navbar .nav-link + .nav-link {
-        margin-left: 0;
-    }
-}
-
-.bd-content {
-    border: 4px ridge #FFE90F;
-}
-
-.bd-content > table {
+.workspace > table {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -193,47 +177,41 @@ h2 {
     overflow-y: auto;
 }
 
-.bd-content > table > thead > tr > th,
-.bd-content > table > thead > tr > td,
-.bd-content > table > tbody > tr > th,
-.bd-content > table > tbody > tr > td,
-.bd-content > table > tfoot > tr > th,
-.bd-content > table > tfoot > tr > td {
+.workspace > table > thead > tr > th,
+.workspace > table > thead > tr > td,
+.workspace > table > tbody > tr > th,
+.workspace > table > tbody > tr > td,
+.workspace > table > tfoot > tr > th,
+.workspace > table > tfoot > tr > td {
     padding: 0.75rem;
     vertical-align: top;
     border: 1px solid #eceeef;
 }
 
-.bd-content > table > thead > tr > th > p:last-child,
-.bd-content > table > thead > tr > td > p:last-child,
-.bd-content > table > tbody > tr > th > p:last-child,
-.bd-content > table > tbody > tr > td > p:last-child,
-.bd-content > table > tfoot > tr > th > p:last-child,
-.bd-content > table > tfoot > tr > td > p:last-child {
+.workspace > table > thead > tr > th > p:last-child,
+.workspace > table > thead > tr > td > p:last-child,
+.workspace > table > tbody > tr > th > p:last-child,
+.workspace > table > tbody > tr > td > p:last-child,
+.workspace > table > tfoot > tr > th > p:last-child,
+.workspace > table > tfoot > tr > td > p:last-child {
     margin-bottom: 0;
 }
 
-.bd-content > table td:first-child > code {
+.workspace > table td:first-child > code {
     white-space: nowrap;
 }
 
-.bd-content > h2:not(:first-child) {
+.workspace > h2:not(:first-child) {
     margin-top: 3rem;
 }
 
-.bd-content > h3 {
+.workspace > h3 {
     margin-top: 1.5rem;
 }
 
-.bd-content > ul li,
-.bd-content > ol li {
+.workspace > ul li,
+.workspace > ol li {
     margin-bottom: .25rem;
-}
-
-@media (min-width: 768px) {
-    .bd-sidebar {
-        padding-left: 1rem;
-    }
 }
 
 .bd-toc-link {
@@ -283,6 +261,54 @@ h2 {
     margin: 10px 10px 10px 10px
 }
 
-.history-trans-hira {
+#history-trans-hira {
     margin-top: 10px
+}
+
+#history-trans-hira tbody tr th {
+    text-align: right;
+}
+
+#history-trans-hira tbody tr td {
+    text-align: left;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    /*padding: 8px 8px 8px 32px;*/
+    text-decoration: none;
+    /*font-size: 25px;*/
+    /*color: #818181;*/
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

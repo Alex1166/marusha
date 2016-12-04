@@ -98,8 +98,17 @@
             </nav>
         </div>
         <div class="col-xs-12 col-md-9 push-md-2 bd-content">
-
+            <h2>Animated Sidenav Example</h2>
+            <p>Click on the element below to open the side navigation menu.</p>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
         </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
 </div>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -109,5 +118,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
         integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
         crossorigin="anonymous"></script>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </body>
 </html>
