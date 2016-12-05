@@ -26,11 +26,20 @@ var goodAnswer = function () {
 }, incrementTotal = function () {
     $(".total").html(parseInt($(".total").html()) + 1)
 };
+
 $(document).on("click", ".menu-btn", function (a) {
-    a.preventDefault(), $(".menu, .overlay-bg").fadeIn(255)
-}), $(document).on("click", ".menu, .overlay-bg", function (a) {
-    a.preventDefault(), $(".menu, .overlay-bg").fadeOut(255)
-}), $.fn.random = function () {
+        a.preventDefault(), $(".menu, .overlay-bg").fadeIn(255)
+    }
+),
+    $(document).on("click", ".menu", function (a) {
+            a.preventDefault(), $(".menu, .overlay-bg").fadeOut(255)
+        }
+    ),
+    $(".content").click(function (a) {
+            event.stopPropagation();
+        }
+    ),
+    $.fn.random = function () {
     return this.eq(Math.floor(Math.random() * this.length))
 };
 var getRandomHiragana = function () {
