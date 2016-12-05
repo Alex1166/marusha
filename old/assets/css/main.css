@@ -161,6 +161,11 @@ h2 {
     /*background-color: #FFDF3C;*/
 }
 
+.menu .nav > li > a:hover,
+.menu .nav > li > a:focus {
+    text-decoration: none;
+}
+
 .workspace {
     border: 1px solid #FFE90F;
 }
