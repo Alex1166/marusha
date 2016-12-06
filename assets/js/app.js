@@ -1,4 +1,4 @@
-$(".menu, .progress-table, .overlay-bg").fadeOut(0), $(document).click(function () {
+$(".menu, .progress-table, .overlay-bg, .overlay").fadeOut(0), $(document).click(function () {
     $(".input").focus()
 }), $(document).on("blur", ".input", function () {
     $(this).removeClass("hidden")
@@ -28,11 +28,11 @@ var goodAnswer = function () {
 };
 
 $(document).on("click", ".menu-btn", function (a) {
-        a.preventDefault(), $(".menu, .overlay-bg").fadeIn(255)
+        a.preventDefault(), $(".overlay, .overlay-bg, .menu").fadeIn(255)
     }
 ),
-    $(document).on("click", ".menu", function (a) {
-            a.preventDefault(), $(".menu, .overlay-bg").fadeOut(255)
+    $(document).on("click", ".overlay-click-zone", function (a) {
+            a.preventDefault(), $(".overlay, .overlay-bg, .menu").fadeOut(255)
         }
     ),
     $(".content").click(function (a) {
