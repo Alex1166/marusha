@@ -1,4 +1,4 @@
-$(".menu, .progress-table, .overlay-bg, .overlay").fadeOut(0), $(document).click(function () {
+$(".menu, .progress-table, .overlay-bg, .overlay-menu, .overlay-progress").fadeOut(0), $(document).click(function () {
     $(".input").focus()
 }), $(document).on("blur", ".input", function () {
     $(this).removeClass("hidden")
@@ -28,20 +28,30 @@ var goodAnswer = function () {
 };
 
 $(document).on("click", ".menu-btn", function (a) {
-        a.preventDefault(), $(".overlay, .overlay-bg, .menu").fadeIn(255)
+        a.preventDefault(), $(".overlay-menu, .overlay-bg, .menu").fadeIn(255)
     }
-),
-    $(document).on("click", ".overlay-click-zone", function (a) {
-            a.preventDefault(), $(".overlay, .overlay-bg, .menu").fadeOut(255)
-        }
-    ),
-    $(".content").click(function (a) {
-            event.stopPropagation();
-        }
-    ),
-    $.fn.random = function () {
+);
+
+$(document).on("click", ".menu, .overlay-click-zone", function (a) {
+        a.preventDefault(), $(".overlay-menu, .overlay-bg, .menu").fadeOut(255)
+    }
+);
+$(document).on("click", ".progress-btn", function (a) {
+        a.preventDefault(), $(".overlay-progress, .overlay-bg, .progress-table").fadeIn(255)
+    }
+);
+$(document).on("click", ".progress-table, .overlay-click-zone", function (a) {
+        a.preventDefault(), $(".overlay-progress, .overlay-bg, .progress-table").fadeOut(255)
+    }
+);
+$(".menu .content, .progress-table .items li").click(function (a) {
+        event.stopPropagation();
+    }
+);
+$.fn.random = function () {
     return this.eq(Math.floor(Math.random() * this.length))
 };
+
 var getRandomHiragana = function () {
     if (1 == $("#mono").prop("checked"))var a = $(".hiragana.mono").not(".empty").random(); else var a = $(".hiragana").not(".empty").random();
     var b = a.next();
