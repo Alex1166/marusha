@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!--<link rel="stylesheet" href="/marusha/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!-- рукописный, обычный, скорописный,
+-->
+<div class="overlay-progress">
+    <div class="overlay-click-zone"></div>
+    <div class="overlay-bg"></div>
+    <div class="progress-table">
+        <div class="content">
+            <div class="comment">Вы красавчик</div>
+            <hr>
+            <h2>ЗАГОЛОВОК</h2>
+            <ul class="items">
+                <li>
+                    <div class="hiragana kana">あ</div>
+                    <div class="latin">a</div>
+                </li>
+                <li>
+                    <div class="hiragana kana">あ</div>
+                    <div class="latin">a</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="overlay-menu">
+    <div class="overlay-bg"></div>
+    <div class="overlay-click-zone"></div>
+    <div class="menu">
+        <ul class="content items">
+            <li>
+                <div class="menu-item">Хирагана</div>
+            </li>
+            <li>
+                <div class="menu-item">Катакана</div>
+            </li>
+            <li>
+                <div class="menu-item">Транскрипция символа</div>
+            </li>
+            <li>
+                <div class="menu-item">Символ по транскрипции</div>
+            </li>
+            <li>
+                <div class="menu-item">Аналоги символов</div>
+            </li>
+            <li>
+                <div class="menu-item">Похожие символы</div>
+            </li>
+            <li>
+                <div class="menu-item">Настройки</div>
+            </li>
+            <li>
+                <div class="menu-item">О приложении</div>
+            </li>
+        </ul>
+        <div class="settings-in-menu">
+            <ul class="items">
+                <li>
+                    <input type="checkbox" id="dia-check" checked/>
+                    <label for="dia-check">Диакритики</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="yon-check" checked/>
+                    <label for="yon-check">Ёоны</label>
+                </li>
+            </ul>
+            <ul class="items">
+                <li>
+                    <label>Хирагана</label>
+                    <label>/</label>
+                    <label>Катакана</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="settings-menu">
+    <ul class="items">
+        <li>
+            <a href="#" class="menu-btn">Меню</a>
+        </li>
+        <li>
+            <a href="#" class="progress-btn">Прогресс</a>
+        </li>
+    </ul>
+</div>
+
+<p class="yep">Good!<br>
+    <span class="plus">+1</span>
+</p>
+
+<p class="nope">
+    <span class="red">Nope!</span>
+    Правильный ответ:<br>
+    <span class="answ">
+
+    </span>
+</p>
+
+<div class="hiragana-symbol">
+
+    <p class="test-skills">Введите транскрипцию символа</p>
+
+    <div class="character kana"
+         style="font-family:
+            JapanSans90,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Печатный
+    <div class="character kana"
+         style="font-family:
+            Honoka Antique-Maru,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Печатный закругленный
+    <div class="character kana"
+         style="font-family:
+            GT2000-01,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Тонкий
+    <div class="character kana"
+         style="font-family:
+            ACKaisyo,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Рукописный кайсё
+    <div class="character kana"
+         style="font-family:
+            HakusyuGyosyo,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Рукописный гёсё
+    <div class="character kana"
+         style="font-family:
+            KouzanSousyo,
+            sans-serif;
+         font-size: 5rem;
+         line-height: 5rem;">あ</div>Рукописный сосё (скорописный)
+
+    <form>
+        <input type="text" class="input" autofocus="autofocus" maxlength="3" required="required"/>
+        <input type="submit" class="submit"/>
+    </form>
+
+    <a href="#" class="skip">Пропустить</a>
+</div>
+
+
+<div class="history">
+    <ul class="items">
+        <li>
+            <div class="symbol kana">ょ</div>
+        </li>
+        <li>
+            <div class="transcription">/b/</div>
+        </li>
+        <li>
+            <div class="symbol kana">ょ</div>
+        </li>
+        <li>
+            <div class="transcription">/b/</div>
+        </li>
+    </ul>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45199920-3', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

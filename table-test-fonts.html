@@ -1,0 +1,381 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Marusha</title>
+    <base href="/marusha/">
+    <!--<script>document.write('<base href="' + document.location + '" />');</script>-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script type="text/javascript">try {
+        window.AG_onLoad = function (func) {
+            if (window.addEventListener) {
+                window.addEventListener('DOMContentLoaded', func);
+            }
+        };
+        window.AG_removeElementById = function (id) {
+            var element = document.getElementById(id);
+            if (element && element.parentNode) {
+                element.parentNode.removeChild(element);
+            }
+        };
+        window.AG_removeElementBySelector = function (selector) {
+            if (!document.querySelectorAll) {
+                return;
+            }
+            var nodes = document.querySelectorAll(selector);
+            if (nodes) {
+                for (var i = 0; i < nodes.length; i++) {
+                    if (nodes[i] && nodes[i].parentNode) {
+                        nodes[i].parentNode.removeChild(nodes[i]);
+                    }
+                }
+            }
+        };
+        window.AG_each = function (selector, fn) {
+            if (!document.querySelectorAll) return;
+            var elements = document.querySelectorAll(selector);
+            for (var i = 0; i < elements.length; i++) {
+                fn(elements[i]);
+            }
+            ;
+        };
+        var AG_removeParent = function (el, fn) {
+            while (el && el.parentNode) {
+                if (fn(el)) {
+                    el.parentNode.removeChild(el);
+                    return;
+                }
+                el = el.parentNode;
+            }
+        };
+        var AG_onLoad = function (func) {
+            if (document.readyState === "complete" || document.readyState === "interactive") func(); else if (document.addEventListener) document.addEventListener("DOMContentLoaded", func); else if (document.attachEvent) document.attachEvent("DOMContentLoaded", func)
+        };
+        var AG_removeElementById = function (id) {
+            var element = document.getElementById(id);
+            if (element && element.parentNode) {
+                element.parentNode.removeChild(element);
+            }
+        };
+        var AG_removeElementBySelector = function (selector) {
+            if (!document.querySelectorAll) {
+                return;
+            }
+            var nodes = document.querySelectorAll(selector);
+            if (nodes) {
+                for (var i = 0; i < nodes.length; i++) {
+                    if (nodes[i] && nodes[i].parentNode) {
+                        nodes[i].parentNode.removeChild(nodes[i]);
+                    }
+                }
+            }
+        };
+        var AG_each = function (selector, fn) {
+            if (!document.querySelectorAll) return;
+            var elements = document.querySelectorAll(selector);
+            for (var i = 0; i < elements.length; i++) {
+                fn(elements[i]);
+            }
+            ;
+        };
+        var AdFox_getCodeScript = function () {
+        };
+        AG_onLoad(function () {
+            AG_each('iframe[id^="AdFox_iframe_"]', function (el) {
+                if (el && el.parentNode) {
+                    el.parentNode.removeChild(el);
+                }
+            });
+        });
+        try {
+            Object.defineProperty(window, 'noAdsAtAll', {
+                get: function () {
+                    return true;
+                }
+            });
+        } catch (ex) {
+        }
+    } catch (ex) {
+        console.error('Error executing AG js: ' + ex);
+    }</script>
+    <style></style>
+    <style>#menu-items[_ngcontent-pab-1] {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #696d70;
+        overflow-x: hidden;
+        padding-top: 2rem;
+        transition: 0.5s;
+
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #menu-items[_ngcontent-pab-1] a[_ngcontent-pab-1] {
+        position: relative;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    #menu-items[_ngcontent-pab-1] a[_ngcontent-pab-1]:hover {
+        color: #373a3c;
+    }
+
+    #menu-items[_ngcontent-pab-1] a.active[_ngcontent-pab-1] {
+        background-color: #66afe9;
+    }
+
+    #menu-items[_ngcontent-pab-1] hr[_ngcontent-pab-1] {
+        border-color: #818181;
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }</style>
+    <style>.big-sign[_ngcontent-pab-4] {
+        font-size: 3em;
+    }</style>
+</head>
+<body>
+<app-root _nghost-pab-0="">
+    <app-menu _ngcontent-pab-0="" _nghost-pab-1="">
+        <nav _ngcontent-pab-1="" id="menu-items" style="width: 0px;"><a _ngcontent-pab-1="" routerlink="/table/hiragana"
+                                                                        routerlinkactive="active"
+                                                                        href="/marusha/table/hiragana" class="active">ТАБЛИЦА</a>
+            <hr _ngcontent-pab-1="">
+            <a _ngcontent-pab-1="" routerlink="/practice/sign-to-transcription/hiragana" routerlinkactive="active"
+               href="/marusha/practice/sign-to-transcription/hiragana">ЗНАК В ТРАНСКРИПЦИЮ</a><a _ngcontent-pab-1=""
+                                                                                                 routerlink="/practice/transcription-to-sign/hiragana"
+                                                                                                 routerlinkactive="active"
+                                                                                                 href="/marusha/practice/transcription-to-sign/hiragana">ТРАНСКРИПЦИЮ
+                В ЗНАК</a><a _ngcontent-pab-1="" routerlink="/practice/corresponding-symbol/hiragana"
+                             routerlinkactive="active" href="/marusha/practice/corresponding-symbol/hiragana">СООТВЕТСТВУЮЩИЙ
+                СИМВОЛ</a><a _ngcontent-pab-1="" routerlink="/practice/similar-signs/hiragana" routerlinkactive="active"
+                             href="/marusha/practice/similar-signs/hiragana">ПОХОЖИЕ СИМВОЛЫ</a>
+            <hr _ngcontent-pab-1="">
+            <a _ngcontent-pab-1="" routerlink="/about" routerlinkactive="active" href="/marusha/about">О
+                ПРИЛОЖЕНИИ</a><a _ngcontent-pab-1="" routerlink="/settings" routerlinkactive="active"
+                                 href="/marusha/settings">НАСТРОЙКИ</a>
+        </nav>
+    </app-menu>
+    <router-outlet _ngcontent-pab-0=""></router-outlet>
+    <app-table _nghost-pab-2="">
+        <div _ngcontent-pab-2="" class="kana-table">
+            <table _ngcontent-pab-2="" class="table table-hover table-sm table-bordered">
+                <tbody _ngcontent-pab-2="">
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2=""></th>
+                    <!--template bindings={}-->
+                    <th _ngcontent-pab-2=""></th>
+                    <th _ngcontent-pab-2="">а</th>
+                    <th _ngcontent-pab-2="">и</th>
+                    <th _ngcontent-pab-2="">у</th>
+                    <th _ngcontent-pab-2="">э</th>
+                    <th _ngcontent-pab-2="">о</th>
+                    <th _ngcontent-pab-2="">я</th>
+                    <th _ngcontent-pab-2="">ю</th>
+                    <th _ngcontent-pab-2="">ё</th>
+                </tr>
+                <!--template bindings={}-->
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2=""></th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">あ</td>
+                    <td _ngcontent-pab-2="" class="kana">い</td>
+                    <td _ngcontent-pab-2="" class="kana">う</td>
+                    <td _ngcontent-pab-2="" class="kana">え</td>
+                    <td _ngcontent-pab-2="" class="kana">お</td>
+                    <td _ngcontent-pab-2="" class="kana">や</td>
+                    <td _ngcontent-pab-2="" class="kana">ゆ</td>
+                    <td _ngcontent-pab-2="" class="kana">よ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">к</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">か</td>
+                    <td _ngcontent-pab-2="" class="kana">き</td>
+                    <td _ngcontent-pab-2="" class="kana">く</td>
+                    <td _ngcontent-pab-2="" class="kana">け</td>
+                    <td _ngcontent-pab-2="" class="kana">こ</td>
+                    <td _ngcontent-pab-2="" class="kana">きゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">きゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">きょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">с</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">さ</td>
+                    <td _ngcontent-pab-2="" class="kana">し</td>
+                    <td _ngcontent-pab-2="" class="kana">す</td>
+                    <td _ngcontent-pab-2="" class="kana">せ</td>
+                    <td _ngcontent-pab-2="" class="kana">そ</td>
+                    <td _ngcontent-pab-2="" class="kana">しゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">しゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">しょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">т</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">た</td>
+                    <td _ngcontent-pab-2="" class="kana">ち</td>
+                    <td _ngcontent-pab-2="" class="kana">つ</td>
+                    <td _ngcontent-pab-2="" class="kana">て</td>
+                    <td _ngcontent-pab-2="" class="kana">と</td>
+                    <td _ngcontent-pab-2="" class="kana">ちゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">ちゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">ちょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">н</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana">ん</td>
+                    <td _ngcontent-pab-2="" class="kana">な</td>
+                    <td _ngcontent-pab-2="" class="kana">に</td>
+                    <td _ngcontent-pab-2="" class="kana">ぬ</td>
+                    <td _ngcontent-pab-2="" class="kana">ね</td>
+                    <td _ngcontent-pab-2="" class="kana">の</td>
+                    <td _ngcontent-pab-2="" class="kana">にゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">にゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">にょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">х</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">は</td>
+                    <td _ngcontent-pab-2="" class="kana">ひ</td>
+                    <td _ngcontent-pab-2="" class="kana">ふ</td>
+                    <td _ngcontent-pab-2="" class="kana">へ</td>
+                    <td _ngcontent-pab-2="" class="kana">ほ</td>
+                    <td _ngcontent-pab-2="" class="kana">ひゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">ひゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">ひょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">м</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">ま</td>
+                    <td _ngcontent-pab-2="" class="kana">み</td>
+                    <td _ngcontent-pab-2="" class="kana">む</td>
+                    <td _ngcontent-pab-2="" class="kana">め</td>
+                    <td _ngcontent-pab-2="" class="kana">も</td>
+                    <td _ngcontent-pab-2="" class="kana">みゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">みゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">みょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">р</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">ら</td>
+                    <td _ngcontent-pab-2="" class="kana">り</td>
+                    <td _ngcontent-pab-2="" class="kana">る</td>
+                    <td _ngcontent-pab-2="" class="kana">れ</td>
+                    <td _ngcontent-pab-2="" class="kana">ろ</td>
+                    <td _ngcontent-pab-2="" class="kana">りゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">りゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">りょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">в</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">わ</td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">を</td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">г</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">が</td>
+                    <td _ngcontent-pab-2="" class="kana">ぎ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぐ</td>
+                    <td _ngcontent-pab-2="" class="kana">げ</td>
+                    <td _ngcontent-pab-2="" class="kana">ご</td>
+                    <td _ngcontent-pab-2="" class="kana">ぎゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぎゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぎょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">дз</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">ざ</td>
+                    <td _ngcontent-pab-2="" class="kana">じ</td>
+                    <td _ngcontent-pab-2="" class="kana">ず</td>
+                    <td _ngcontent-pab-2="" class="kana">ぜ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぞ</td>
+                    <td _ngcontent-pab-2="" class="kana">じゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">じゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">じょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">д</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">だ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぢ</td>
+                    <td _ngcontent-pab-2="" class="kana">づ</td>
+                    <td _ngcontent-pab-2="" class="kana">で</td>
+                    <td _ngcontent-pab-2="" class="kana">ど</td>
+                    <td _ngcontent-pab-2="" class="kana">ぢゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぢゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぢょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">б</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">ば</td>
+                    <td _ngcontent-pab-2="" class="kana">び</td>
+                    <td _ngcontent-pab-2="" class="kana">ぶ</td>
+                    <td _ngcontent-pab-2="" class="kana">べ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぼ</td>
+                    <td _ngcontent-pab-2="" class="kana">びゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">びゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">びょ</td>
+                </tr>
+                <tr _ngcontent-pab-2="">
+                    <th _ngcontent-pab-2="">п</th>
+                    <!--template bindings={}-->
+                    <td _ngcontent-pab-2="" class="kana"></td>
+                    <td _ngcontent-pab-2="" class="kana">ぱ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぴ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぷ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぺ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぽ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぴゃ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぴゅ</td>
+                    <td _ngcontent-pab-2="" class="kana">ぴょ</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--template bindings={}--></app-table>
+</app-root>
+<script type="text/javascript" src="inline.d41d8cd98f00b204e980.bundle.js"></script>
+<script type="text/javascript" src="styles.5f7f16a82a4f91544984.bundle.js"></script>
+<script type="text/javascript" src="main.057399e424399c274932.bundle.js"></script>
+
+</body>
+</html>

@@ -28,7 +28,20 @@ var goodAnswer = function () {
 };
 
 $(document).on("click", ".menu-btn", function (a) {
-        a.preventDefault(), $(".overlay-menu, .overlay-bg, .menu").fadeIn(255)
+        // a.preventDefault(), $(".overlay-menu, .overlay-bg, .menu").fadeIn(255)
+        var cssId = 'myCss';  // you could encode the css path itself to generate id..
+        $('link[rel=stylesheet][href*="font"]').remove();
+        if (!document.getElementById(cssId))
+        {
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = cssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'assets/css/font-1.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
     }
 );
 
@@ -37,14 +50,27 @@ $(document).on("click", ".menu, .overlay-click-zone", function (a) {
     }
 );
 $(document).on("click", ".progress-btn", function (a) {
-        a.preventDefault(), $(".overlay-progress, .overlay-bg, .progress-table").fadeIn(255)
+        // a.preventDefault(), $(".overlay-progress, .overlay-bg, .progress-table").fadeIn(255)
+        var cssId = 'myCss';  // you could encode the css path itself to generate id..
+        $('link[rel=stylesheet][href*="font"]').remove();
+        if (!document.getElementById(cssId))        {
+
+            var head  = document.getElementsByTagName('head')[0];
+            var link  = document.createElement('link');
+            link.id   = cssId;
+            link.rel  = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'assets/css/font-2.css';
+            link.media = 'all';
+            head.appendChild(link);
+        }
     }
 );
 $(document).on("click", ".progress-table, .overlay-click-zone", function (a) {
         a.preventDefault(), $(".overlay-progress, .overlay-bg, .progress-table").fadeOut(255)
     }
 );
-$(".menu .content, .progress-table .items li").click(function (a) {
+$(".menu .content, .progress-table .items li, .settings-in-menu").click(function (a) {
         event.stopPropagation();
     }
 );

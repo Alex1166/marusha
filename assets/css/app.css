@@ -1,26 +1,70 @@
 @font-face {
-    font-family: GT2000-01;
-    src: url(/assets/fonts/GT2000-01.ttf);
+    /*Печатный*/
+    font-family: JapanSans90;
+    src: url(/marusha/assets/fonts/JapanSans90.otf);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
+    /*Печатный закругленный*/
+    font-family: Honoka Antique-Maru;
+    src: url("/marusha/assets/fonts/Honoka Antique-Maru.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    /*Тонкий*/
+    font-family: GT2000-01;
+    src: url(/marusha/assets/fonts/GT2000-01.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    /*Рукописный кайсё*/
+    /*Kaisho (кайсё) означают "устав". Угловатый квадратный по форме иероглиф рисуется четкими и уверенными линиями.*/
+    font-family: ACKaisyo;
+    src: url(/marusha/assets/fonts/ACKaisyo.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    /*Рукописный гёсё*/
+    /*Gyosho (гёсё), или полукурсив, характеризуется более быстрым стилем написания, плавными, закругленными линиями, напоминающему по начертанию хирагану.*/
     font-family: HakusyuGyosyo;
     src: url(/marusha/assets/fonts/HakusyuGyosyo.ttf);
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
-    font-family: Mona;
-    src: url(/marusha/assets/fonts/Mona.ttf);
+    /*Рукописный сосё (скорописный)*/
+    /*Sosho (сосё) - курсивное начертание иероглифов, при написании которых кисть совершает несколько плавных штрихов или даже почти не отрывается от бумаги*/
+    font-family: KouzanSousyo;
+    src: url(/marusha/assets/fonts/KouzanSousyo.ttf);
     font-weight: 400;
     font-style: normal;
 }
 .kana {
-    font-family: GT2000-01, HakusyuGyosyo, Mona, sans-serif
+    font-family:
+            JapanSans90,
+            Honoka Antique-Maru,
+            GT2000-01,
+            ACKaisyo,
+            HakusyuGyosyo,
+            KouzanSousyo,
+            sans-serif;
+    font-size: 40px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
 }
 html {
-    font-size: 14px;
+    font-size: 2vh;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -59,11 +103,10 @@ body {
     font-size: 3rem;
     border: 0;
     height: 3rem;
-    padding: 0;
+    padding: 25px 0 25px 0;
     outline: none;
     -webkit-appearance: none;
     text-align: center;
-    padding-bottom: 25px;
     width: auto;
     font-weight: 300;
     color: #000;
@@ -193,17 +236,7 @@ a:visited {
 .twitter-share:hover span {
     color: #5c6bc2;
 }
-.menu-btn {
-    color: #b7b8b9 !important;
-    text-decoration: none;
-    z-index: 5;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    font-weight: 400;
-    font-size: .85rem;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
+.menu-btn,
 .progress-btn {
     color: #b7b8b9 !important;
     text-decoration: none;
@@ -222,8 +255,8 @@ a:visited {
 .settings-menu {
     position: absolute;
     z-index: 999;
-    top: 5%;
-    left: 5%;
+    top: 3%;
+    left: 4%;
 }
 .settings-menu .items li {
     padding: 0;
@@ -248,7 +281,7 @@ a:visited {
 #yon-check {
     -webkit-appearance: none;
     -moz-appearance: none;
-    border: 1px solid #b7b8b9;
+    border: 1px solid grey;
     width: 18px;
     height: 18px;
     border-radius: 2px;
@@ -260,32 +293,33 @@ a:visited {
     font-family: fontawesome;
     position: relative;
     top: 1px;
-    left: 1.5px;
-    color: #5c6bc2;
+    left: 1px;
+    color: #fff;
 }
 #dia-check:checked,
 #yon-check:checked {
-    border-color: #5c6bc2;
+    border-color: #fff;
 }
 #dia-check + label,
 #yon-check + label {
     float: left;
     margin-left: 5px;
     margin-top: 6px;
-    color: #b7b8b9;
+    color: grey;
 }
 #dia-check:checked + label,
 #yon-check:checked + label {
-    color: #5c6bc2;
+    color: #fff;
 }
 label {
     font-weight: 500;
-    font-size: .75rem;
+    font-size: 100%;
     letter-spacing: .1rem;
     margin-bottom: .5rem;
-    display: block;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
+    display: block;
+    float: left;
 }
 input {
     outline: none;
@@ -455,27 +489,22 @@ input {
     font-weight: 400;
 }
 .menu .content {
-    padding: 40px;
-    padding: 2vw;
+    padding: 2vw 2vw 2vw 2vw;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 5vw auto;
     text-align: center;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     z-index: 9999;
 }
-.menu .items {
-    padding: 0 0 60px 0;
-    margin: 30px 0 0 0;
-}
-.menu .items:before,
-.menu .items:after {
+.menu .content.items:before,
+.menu .content.items:after {
     content: " ";
     display: table;
 }
 .menu .items:after {
     clear: both;
 }
-.menu .items li {
+.menu .content.items li {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -483,13 +512,38 @@ input {
     border-bottom: 2px solid #7582d0;
     list-style-type: none;
 }
-.menu .items li .menu-item {
+.menu .content.items li .menu-item {
     padding-top: 1rem;
     padding-top: 1vw;
     line-height: 2rem;
     line-height: 2.75vw;
     font-size: 18px;
     font-size: 1.6vw;
+}
+.settings-in-menu {
+    margin: 5vw auto;
+    position: fixed;
+    max-width: 400px;
+    left: 5vw;
+    bottom: 1vh;
+    padding-bottom: 8px;
+    text-align: center;
+    z-index: 9999;
+}
+.settings-in-menu > ul {
+    -webkit-padding-start: 0;
+}
+.settings-in-menu > .items {
+    padding-top: 6vh;
+}
+.settings-in-menu > .items li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+    list-style-type: none;
+    font-size: 16px;
+    font-size: 1vw;
 }
 .menu hr {
     background: #7582d0;

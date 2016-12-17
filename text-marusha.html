@@ -1,0 +1,219 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Marusha</title>
+    <base href="/marusha/">
+    <!--<script>document.write('<base href="' + document.location + '" />');</script>-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/test.css">
+    <script type="text/javascript">try {
+        window.AG_onLoad = function (func) {
+            if (window.addEventListener) {
+                window.addEventListener('DOMContentLoaded', func);
+            }
+        };
+        window.AG_removeElementById = function (id) {
+            var element = document.getElementById(id);
+            if (element && element.parentNode) {
+                element.parentNode.removeChild(element);
+            }
+        };
+        window.AG_removeElementBySelector = function (selector) {
+            if (!document.querySelectorAll) {
+                return;
+            }
+            var nodes = document.querySelectorAll(selector);
+            if (nodes) {
+                for (var i = 0; i < nodes.length; i++) {
+                    if (nodes[i] && nodes[i].parentNode) {
+                        nodes[i].parentNode.removeChild(nodes[i]);
+                    }
+                }
+            }
+        };
+        window.AG_each = function (selector, fn) {
+            if (!document.querySelectorAll) return;
+            var elements = document.querySelectorAll(selector);
+            for (var i = 0; i < elements.length; i++) {
+                fn(elements[i]);
+            }
+            ;
+        };
+        var AG_removeParent = function (el, fn) {
+            while (el && el.parentNode) {
+                if (fn(el)) {
+                    el.parentNode.removeChild(el);
+                    return;
+                }
+                el = el.parentNode;
+            }
+        };
+        var AG_onLoad = function (func) {
+            if (document.readyState === "complete" || document.readyState === "interactive") func(); else if (document.addEventListener) document.addEventListener("DOMContentLoaded", func); else if (document.attachEvent) document.attachEvent("DOMContentLoaded", func)
+        };
+        var AG_removeElementById = function (id) {
+            var element = document.getElementById(id);
+            if (element && element.parentNode) {
+                element.parentNode.removeChild(element);
+            }
+        };
+        var AG_removeElementBySelector = function (selector) {
+            if (!document.querySelectorAll) {
+                return;
+            }
+            var nodes = document.querySelectorAll(selector);
+            if (nodes) {
+                for (var i = 0; i < nodes.length; i++) {
+                    if (nodes[i] && nodes[i].parentNode) {
+                        nodes[i].parentNode.removeChild(nodes[i]);
+                    }
+                }
+            }
+        };
+        var AG_each = function (selector, fn) {
+            if (!document.querySelectorAll) return;
+            var elements = document.querySelectorAll(selector);
+            for (var i = 0; i < elements.length; i++) {
+                fn(elements[i]);
+            }
+            ;
+        };
+        var AdFox_getCodeScript = function () {
+        };
+        AG_onLoad(function () {
+            AG_each('iframe[id^="AdFox_iframe_"]', function (el) {
+                if (el && el.parentNode) {
+                    el.parentNode.removeChild(el);
+                }
+            });
+        });
+        try {
+            Object.defineProperty(window, 'noAdsAtAll', {
+                get: function () {
+                    return true;
+                }
+            });
+        } catch (ex) {
+        }
+    } catch (ex) {
+        console.error('Error executing AG js: ' + ex);
+    }</script>
+    <style></style>
+    <style>#menu-items[_ngcontent-puy-1] {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #696d70;
+        overflow-x: hidden;
+        padding-top: 2rem;
+        transition: 0.5s;
+
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    #menu-items[_ngcontent-puy-1] a[_ngcontent-puy-1] {
+        position: relative;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+
+    #menu-items[_ngcontent-puy-1] a[_ngcontent-puy-1]:hover {
+        color: #373a3c;
+    }
+
+    #menu-items[_ngcontent-puy-1] a.active[_ngcontent-puy-1] {
+        background-color: #66afe9;
+    }
+
+    #menu-items[_ngcontent-puy-1] hr[_ngcontent-puy-1] {
+        border-color: #818181;
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }</style>
+    <style>.container[_ngcontent-puy-3] {
+        padding-top: 2rem;
+    }</style>
+    <style>.right-answer[_ngcontent-puy-8] {
+        border-color: #5cb85c;
+        background-color: #5cb85c;
+    }
+
+    .wrong-answer[_ngcontent-puy-8] {
+        border-color: #d9534f;
+        background-color: #d9534f;
+    }</style>
+</head>
+<body>
+<app-root _nghost-puy-0="">
+    <app-menu _ngcontent-puy-0="" _nghost-puy-1="">
+        <nav _ngcontent-puy-1="" id="menu-items" style="width: 0px;"><a _ngcontent-puy-1="" routerlink="/table/hiragana"
+                                                                        routerlinkactive="active"
+                                                                        href="/marusha/table/hiragana">ТАБЛИЦА</a>
+            <hr _ngcontent-puy-1="">
+            <a _ngcontent-puy-1="" routerlink="/practice/sign-to-transcription/hiragana" routerlinkactive="active"
+               href="/marusha/practice/sign-to-transcription/hiragana" class="active">ЗНАК В ТРАНСКРИПЦИЮ</a><a
+                    _ngcontent-puy-1="" routerlink="/practice/transcription-to-sign/hiragana" routerlinkactive="active"
+                    href="/marusha/practice/transcription-to-sign/hiragana">ТРАНСКРИПЦИЮ В ЗНАК</a><a
+                    _ngcontent-puy-1="" routerlink="/practice/corresponding-symbol/hiragana" routerlinkactive="active"
+                    href="/marusha/practice/corresponding-symbol/hiragana">СООТВЕТСТВУЮЩИЙ СИМВОЛ</a><a
+                    _ngcontent-puy-1="" routerlink="/practice/similar-signs/hiragana" routerlinkactive="active"
+                    href="/marusha/practice/similar-signs/hiragana">ПОХОЖИЕ СИМВОЛЫ</a>
+            <hr _ngcontent-puy-1="">
+            <a _ngcontent-puy-1="" routerlink="/about" routerlinkactive="active" href="/marusha/about" class="">О
+                ПРИЛОЖЕНИИ</a><a _ngcontent-puy-1="" routerlink="/settings" routerlinkactive="active"
+                                 href="/marusha/settings">НАСТРОЙКИ</a>
+        </nav>
+        <div _ngcontent-puy-1="" class="ui-hover" id="menu-toggle" style="left: 1rem;">☰</div>
+    </app-menu>
+    <router-outlet _ngcontent-puy-0=""></router-outlet>
+    <app-sign-to-transcription _nghost-puy-8="">
+        <div _ngcontent-puy-8="" id="settings">
+            <div _ngcontent-puy-8="" class="setting">
+                <input _ngcontent-puy-8="" id="is-diacritic" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                <label _ngcontent-puy-8="" for="is-diacritic">ДИАКРИТИКИ</label>
+            </div>
+            <div _ngcontent-puy-8="" class="setting">
+                <input _ngcontent-puy-8="" id="is-youon" type="checkbox" class="ng-untouched ng-pristine ng-valid">
+                <label _ngcontent-puy-8="" for="is-youon">ЁОНЫ</label>
+            </div>
+        </div>
+        <!--template bindings={}-->
+        <div _ngcontent-puy-8="" id="syllables-list">
+            <!--template bindings={}-->
+            <div _ngcontent-puy-8="" class="syllables-list-item wrong"><span _ngcontent-puy-8="" class="kana">う</span><span
+                    _ngcontent-puy-8="" class="transcription"> /у/</span></div>
+        </div>
+        <a _ngcontent-puy-8="" class="ui-hover" id="kana-toggle" routerlinkactive="active"
+           href="/marusha/practice/sign-to-transcription/katakana">ПЕРЕКЛЮЧИТЬ НА КАТАКАНУ</a><a _ngcontent-puy-8=""
+                                                                                                 class="ui-hover"
+                                                                                                 id="progress">ПРОГРЕСС</a>
+        <div _ngcontent-puy-8="" id="task">
+            <!--template bindings={}-->
+            <div _ngcontent-puy-8="" id="previous-syllable-info" class="wrong"><span _ngcontent-puy-8=""
+                                                                                     class="kana">う</span> - у
+            </div>
+            <div _ngcontent-puy-8="" class="kana" id="syllable">あ</div>
+            <input _ngcontent-puy-8="" autofocus="autofocus" id="answer-field" maxlength="3" type="text"
+                   class="ng-pristine ng-valid ng-touched">
+            <div _ngcontent-puy-8="" class="ui-hover" id="skip">ПРОПУСТИТЬ</div>
+        </div>
+        <!--template bindings={}-->
+        <!--template bindings={}--></app-sign-to-transcription>
+</app-root>
+<script type="text/javascript" src="inline.d41d8cd98f00b204e980.bundle.js"></script>
+<script type="text/javascript" src="styles.5f7f16a82a4f91544984.bundle.js"></script>
+<script type="text/javascript" src="main.057399e424399c274932.bundle.js"></script>
+
+</body>
+</html>
